@@ -1,0 +1,7 @@
+{
+  "author": "DriftyJs",
+  "description": "User Authetication, 2fa, jwt, Groups and company's",
+  "version": 1,
+  "name": "DriftyJS - Core",
+  "repo": "https://github.com/DriftyJS/DriftyJS-UserAuth-Module.git"
+}
