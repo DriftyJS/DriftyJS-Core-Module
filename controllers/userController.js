@@ -18,7 +18,7 @@ module.exports = {
             request.state.twoFAPassed === true &&
             request.state.isLoggedIn === true
         ) {
-            return h.redirect(`/`);
+            return h.redirect(`/admin/dashboard`);
         }
 
         if (
