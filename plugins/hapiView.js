@@ -5,7 +5,7 @@ const simsView = {
     name: 'simsView',
     version: '1.0.0',
     register: async function (server) {
-        const simsView = function (view, viewOptions, request) {
+        const simsView = function (view, viewOptions, request, extra) {
             if (!viewOptions) {
                 viewOptions = {};
                 viewOptions['helpers'] = {};
@@ -19,7 +19,7 @@ const simsView = {
             viewOptions['helpers'] = Helpers.ejsHelpers;
             viewOptions['request'] = request;
 
-            return this.view(view, viewOptions);
+            return this.view(view, viewOptions, extra);
         };
 
         server.decorate('toolkit', 'simsView', simsView);

@@ -25,9 +25,9 @@ module.exports = {
             request.state.twoFAPassed === false &&
             request.state.isLoggedIn === true
         ) {
-            return h.simsView('admin/pages/2fa', {}, request);
+            return h.simsView('admin/pages/2fa', {}, request, {layout: 'core/layout/app'});
         } else {
-            return h.simsView('admin/pages/login', {}, request);
+            return h.simsView('admin/pages/login', {}, request, {layout: 'core/layout/app'});
         }
     },
 
